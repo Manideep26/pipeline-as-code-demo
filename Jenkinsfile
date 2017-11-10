@@ -1,4 +1,5 @@
 #!groovy
+properties ([buildDiscarder(logRotat or(numToKeepStr:’30’,artifactNumToKeepStr:’20’))])
 
 stage 'Dev'
 node ('docker-cloud') {
